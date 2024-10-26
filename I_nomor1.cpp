@@ -27,33 +27,33 @@ int main(int argc, char const *argv[])
     cout << "Masukkan nilai kedua titik dari sumbu x dan sumbu y, dengan format = x1 y1 x2 y2 : " << endl;
     cin >> x1 >> y1 >> x2 >> y2;
 
-    nilaiJarak = distance(x1, y1, x2, y2); 
-    nilaiRadius = radius(x1, y1, x2, y2); 
-    nilaiKeliling = circumreference(x1, y1, x2, y2); 
-    nilaiLuas = area(x1, y1, x2, y2); 
+    nilaiJarak = distance(x1, y1, x2, y2); // Parameter Actual
+    nilaiRadius = radius(x1, y1, x2, y2); // Parameter Actual
+    nilaiKeliling = circumreference(x1, y1, x2, y2); // Parameter Actual
+    nilaiLuas = area(x1, y1, x2, y2); // Parameter Actual
 
-    jarak(nilaiJarak); 
-    Radius(nilaiRadius); 
-    keliling(nilaiKeliling); 
-    luas(nilaiLuas); 
+    jarak(nilaiJarak); // Parameter Actual
+    Radius(nilaiRadius); // Parameter Actual
+    keliling(nilaiKeliling); // Parameter Actual
+    luas(nilaiLuas); // Parameter Actual
 
     return 0;
 }
 
-double distance(double x1, double y1, double x2, double y2) 
+double distance(double x1, double y1, double x2, double y2) // Parameter Formal
 {
     double jarak;
     jarak = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2)); 
     return jarak;
 }
 
-double radius(double x1, double y1, double x2, double y2) 
+double radius(double x1, double y1, double x2, double y2) // Parameter Formal
 {
     distance(x1, y1, x2, y2);
     return distance(x1, y1, x2, y2);
 }
 
-double circumreference(double x1, double y1, double x2, double y2) 
+double circumreference(double x1, double y1, double x2, double y2) // Parameter Formal
 {
     double keliling;
     double Radius;
@@ -62,7 +62,7 @@ double circumreference(double x1, double y1, double x2, double y2)
     return keliling;
 }
 
-double area(double x1, double y1, double x2, double y2) 
+double area(double x1, double y1, double x2, double y2) // Parameter Formal
 {
     double luas;
     double Radius;
@@ -71,22 +71,22 @@ double area(double x1, double y1, double x2, double y2)
     return luas;
 }
 
-void jarak(double input1) 
+void jarak(double input1) // Parameter Formal
 {
     cout << input1 << endl;
 }
 
-void Radius(double input2) 
+void Radius(double input2) // Parameter Formal
 {
     cout << input2 << endl;
 }
 
-void keliling(double input3) 
+void keliling(double input3) // Parameter Formal
 {
     cout << input3 << endl;
 }
 
-void luas(double input4) 
+void luas(double input4) // Parameter Formal
 {
     cout << input4 << endl;
 }
