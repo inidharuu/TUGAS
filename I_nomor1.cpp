@@ -27,10 +27,10 @@ int main(int argc, char const *argv[])
     cout << "Masukkan nilai kedua titik dari sumbu x dan sumbu y, dengan format = x1 y1 x2 y2 : " << endl;
     cin >> x1 >> y1 >> x2 >> y2;
 
-    nilaiJarak = distance(x1, y1, x2, y2); // Parameter Actual
-    nilaiRadius = radius(x1, y1, x2, y2); // Parameter Actual
-    nilaiKeliling = circumreference(x1, y1, x2, y2); // Parameter Actual
-    nilaiLuas = area(x1, y1, x2, y2); // Parameter Actual
+    nilaiJarak = distance(x1, y1, x2, y2); 
+    nilaiRadius = radius(x1, y1, x2, y2); 
+    nilaiKeliling = circumreference(x1, y1, x2, y2); 
+    nilaiLuas = area(x1, y1, x2, y2); 
 
     jarak(nilaiJarak); // Parameter Actual
     Radius(nilaiRadius); // Parameter Actual
